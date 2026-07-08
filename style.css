@@ -517,8 +517,7 @@ footer {
     object-fit: contain;
     padding: 5px;
 }
-/* Mobil Ekranlar İçin Menü Düzenlemesi */
-@media (max-width: 768px) {
+/* Üst menü mobil düzenlemesi */
     header, nav {
         display: flex !important;
         flex-direction: column !important;
@@ -526,8 +525,6 @@ footer {
         gap: 15px !important;
         text-align: center !important;
     }
-    
     nav a {
         margin: 5px 0 !important;
     }
-}
