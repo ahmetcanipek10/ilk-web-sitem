@@ -517,14 +517,27 @@ footer {
     object-fit: contain;
     padding: 5px;
 }
-/* Üst menü mobil düzenlemesi */
-    header, nav {
+/* Telefonlar İçin Üst Menüyü Tamamen Düzenle */
+@media (max-width: 768px) {
+    nav {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         gap: 15px !important;
-        text-align: center !important;
+        padding: 15px 0 !important;
     }
-    nav a {
-        margin: 5px 0 !important;
+
+    .nav-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 10px !important;
     }
+
+    .nav-links {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 10px !important;
+    }
+}
