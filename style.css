@@ -517,8 +517,8 @@ footer {
     object-fit: contain;
     padding: 5px;
 }
-/* Telefonlar İçin Üst Menüyü Tamamen Düzenle */
-@media (max-width: 768px) {
+/* Sadece 768px ve daha küçük (Mobil) ekranlarda çalışır */
+@media screen and (max-width: 768px) {
     nav {
         display: flex !important;
         flex-direction: column !important;
@@ -527,17 +527,20 @@ footer {
         padding: 15px 0 !important;
     }
 
-    .nav-container {
+    nav .nav-container {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         gap: 10px !important;
+        width: 100% !important;
     }
 
-    .nav-links {
+    nav .nav-links {
         display: flex !important;
+        flex-direction: row !important;
         flex-wrap: wrap !important;
         justify-content: center !important;
-        gap: 10px !important;
+        gap: 12px !important;
+        margin: 5px 0 !important;
     }
 }
